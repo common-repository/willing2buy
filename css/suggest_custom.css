@@ -1,0 +1,194 @@
+/* The Modal (background) */
+.suggest-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Header */
+.suggest-modal-header {
+    padding: 16px 16px;
+    font-weight:bold;
+    font-size: 17px;
+    border-bottom: 1px solid #aaa;
+}
+
+/* Modal Body */
+.suggest-modal-body {
+	padding: 2px 30px;
+	margin-bottom: 25px;
+}
+
+
+
+/* Modal Content */
+.suggest-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 3px solid #888;
+    width: 35%;
+    top: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.suggest-close {
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 9px;
+}
+
+.suggest-close:hover,
+.suggest-close:focus {
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.suggest-modal-body label{
+	padding-top: 20px;
+	font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0.2em;
+}
+
+.suggest-modal-body button{
+	margin-top: 25px;
+}
+
+.suggest-input-type{
+	margin-top: 15px;
+	padding: 0.5278em;
+}
+
+#suggestPriceLink{
+    text-decoration: none;
+    border-bottom: none;
+    color: #fff;
+    background-color: #77a464;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    display:none;
+    margin-bottom: 31px;
+    margin-top: -5px;
+}
+
+#suggestPriceLink:hover{
+    color: #333;
+}
+
+.notification{
+    margin-top: 11px;
+    font-size: 14px;
+    margin-bottom: 0.7em;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.err-txt{
+	color:red;
+	font-size:12px;
+	display:none;
+	margin-top: 3px;
+}
+
+@media screen and (max-width: 991px){
+	.suggest-modal-content{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.suggest-modal-content{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.suggest-modal-content{
+		width: 95%;
+	}
+}
+
+.edit_suggested_price{
+    font-weight: bold;
+}
+
+
+.view-table-class , .view-table-class th , .view-table-class td{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+.view-table-class th{
+	background-color: #f7f7f7;
+}
+
+.view-details-table{
+	margin: 10px auto;
+}
+
+
+.bottom-line{
+	border-bottom: 1px solid #333;
+}
+
+.form-table th{
+	text-align: right;
+}
+
+.email-input {
+    width: 40% !important; 
+    line-height: 1.7em !important;
+}
+
+
+.break-word-cls{
+	/* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+
+#adminmenu #toplevel_page_willingto-buy div.wp-menu-image::before {
+    content: '\f101';
+}
